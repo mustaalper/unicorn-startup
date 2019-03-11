@@ -1,0 +1,28 @@
+body{
+    background: url('/img/landing.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Kaushan Script', cursive;
+}
+
+h1{
+    padding-top: 10%;
+}
+
+h1,h4{
+    color:white;
+    text-align: center;
+    font-size: 70px;
+}
+
+#benimButon{
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+}
+
+p{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    margin-top: 15%;
+}

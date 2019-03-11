@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+
+<div class="container">
+
+
+	<hr>
+
+
+	<div class="row">
+		<div class="col-md-12 ">
+			<h1 style="text-align:center;"> *************** </h1>
+			<div class="row">
+				<% companies.forEach(function(company){ %>
+				<div class="col-md-4 col-sm-6">
+						<div class="thumbnail">
+							<div class="container">
+									<img src="<%= company.logo %>" width="40" height="40">
+							</div>
+							<div class="caption text-center">
+								<h3><%= company.name %></h3>
+								<p>
+									<a href="/companies/<%= company._id %>" class="btn btn-primary">Daha Fazla Bilgi</a>
+								</p>
+                <div class="caption text-center">
+  								<h3><%= company.value %></h3>
+									<h6><%= company.comment %></h6>
+                  <img src="<%= company.flag %>" width="15" height="10">
+  							</div>
+							</div>
+						</div>
+				</div>
+				<%	}); %>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<% include ../partials/footer %>

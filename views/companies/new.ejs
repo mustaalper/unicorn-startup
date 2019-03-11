@@ -1,0 +1,42 @@
+<% include ../partials/header %>
+
+<div class="container">
+	<div class="row">
+		<h1 style="text-align:center">Yeni Şirket Ekle</h1>
+
+		<div style="width: 30%; margin: 30px auto;">
+			<form action="/companies" method="POST">
+				<div class="form-group">
+					<input class="form-control" type="text" name="name" placeholder="Şirket Adı">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="logo" placeholder="Resim Url">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="value" placeholder="Değer">
+				</div>
+        <div class="form-group">
+					<input class="form-control" type="text" name="flag" placeholder="Bayrak Url">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="comment" placeholder="Yorum">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="founded" placeholder="Kuruluş">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="became" placeholder="Ne zaman">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-large btn-primary btn-block">Ekle</button>
+				</div>
+			</form>
+			<a href="/companies">Şirketler</a>
+		</div>
+
+	</div>
+</div>
+
+
+
+<% include ../partials/footer %>

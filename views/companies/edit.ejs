@@ -1,0 +1,47 @@
+<% include ../partials/header %>
+
+<div class="container">
+	<div class="row">
+		<h1 style="text-align:center">Şirketi Düzenle</h1>
+
+		<div style="width: 70%; margin: 30px auto;">
+
+            <div class="thumbnail">
+                <img src="<%= company.logo %>" alt="">
+            </div>
+
+			<form action="/companies/<%=company._id%>?_method=PUT" method="POST">
+				<div class="form-group">
+					<input class="form-control" type="text" name="company[name]" value="<%= company.name %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="company[logo]" value="<%= company.logo %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="company[value]" value="<%= company.value %>">
+				</div>
+        <div class="form-group">
+					<input class="form-control" type="text" name="company[flag]" value="<%= company.flag %>">
+				</div>
+        <div class="form-group">
+					<input class="form-control" type="text" name="company[comment]" value="<%= company.comment %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="company[founded]" value="<%= company.founded %>">
+				</div>
+				<div class="form-group">
+					<input class="form-control" type="text" name="company[became]" value="<%= company.became %>">
+				</div>
+				<div class="form-group">
+					<button class="btn btn-large btn-primary btn-block">Düzenle</button>
+				</div>
+			</form>
+			<a href="/companies">Şirketler</a>
+		</div>
+
+	</div>
+</div>
+
+
+
+<% include ../partials/footer %>

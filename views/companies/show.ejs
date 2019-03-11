@@ -1,0 +1,41 @@
+<% include ../partials/header %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="thumbnail">
+				<h1><%= companies.name %></h1>
+				<div class="thumbnail">
+					<div class="thumbnail">
+						<img class="img-responsive" src="<%= companies.logo %>" alt="unicornCompanyLogo" width="40" height="40">
+					</div>
+          <div class="thumbnail">
+            <h4><%= companies.value %></h4>
+          </div>
+					<div class="thumbnail" >
+              <img class="img-responsive" src="<%= companies.flag %>" alt="unicornCompanyFlag" width="15" height="10">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-4">
+			<h1 style="padding-left:8rem;">Açıklama</h1>
+			<div class="thumbnail">
+				<p><%= companies.comment %></p>
+			</div>
+			<div class="thumbnail">
+				<h4>Kuruluş</h4>
+				<p><%= companies.founded %></p>
+			</div>
+			<div class="thumbnail">
+				<h4>Ne zaman Unicorn oldu?</h4>
+				<p><%= companies.became %></p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<% include ../partials/footer %>
