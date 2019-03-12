@@ -33,6 +33,7 @@ app.use(function(req, res, next){
   next();
 });
 
+//yorum yorum yorum gitm
 
 //============
 /*app.get("/", function(req, res){
